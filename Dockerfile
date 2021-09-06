@@ -2,7 +2,7 @@
 FROM golang:alpine AS builder
 RUN apk add --no-cache build-base
 WORKDIR /src
-COPY shiori/. .
+COPY shiori/ .
 RUN GOOS=linux go build -a -installsuffix cgo -ldflags '-extldflags "-static"'
 
 # server image
