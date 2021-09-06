@@ -30,6 +30,3 @@ notes.txt
 # ignore virtual env
 venv
 .venv
-
-# ignore the shiori downloaded directory
-shiori
